@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".DictionarySearchActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/material_dynamic_primary90"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="Dịch thuật"
+        app:titleTextColor="@color/black" />
+
+
+    <!-- Layout nội dung bên dưới toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:padding="16dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2196F3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <!-- RadioGroup để chọn hướng dịch -->
+        <RadioGroup
+            android:id="@+id/radio_group_translation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/radio_eng_to_viet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/translate_EN_VN"
+                android:textSize="16sp"
+                android:textColor="#2196F3"
+                android:buttonTint="#2196F3"
+                android:layout_marginEnd="20dp"/>
+
+            <RadioButton
+                android:id="@+id/radio_viet_to_eng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/translate_VN_EN"
+                android:textSize="16sp"
+                android:textColor="#2196F3"
+                android:buttonTint="#2196F3"/>
+        </RadioGroup>
+
+        <!-- EditText để nhập văn bản -->
+        <EditText
+            android:id="@+id/edt_enter_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_group_translation"
+            android:layout_marginTop="16dp"
+
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="#212121"
+            android:textColorHint="#757575"/>
+
+        <!-- Nút dịch -->
+        <Button
+            android:id="@+id/btn_language_translation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_enter_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/translate_button"
+            android:textSize="16sp"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp"/>
+
+        <!-- TextView để hiển thị kết quả dịch -->
+        <TextView
+            android:id="@+id/tv_translated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_language_translation"
+            android:layout_marginTop="40dp"
+            android:text="@string/translate_success"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:background="@drawable/result_background"
+            android:textColor="#212121"
+            android:gravity="center"/>
+    </RelativeLayout>
+</RelativeLayout>

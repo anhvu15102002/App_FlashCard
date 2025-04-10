@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ProjectSE</string>
+    <string name="login_register_button">Chưa có tài khoản? <b>Đăng ký ngay</b></string>
+    <string name="signup_register_button">Bạn có tài khoản rồi? <b>Đăng nhập ngay</b></string>
+    <string name="signup_forgot_button">Bạn đã cập nhật lại mật khẩu? <b>Đăng nhập ngay</b></string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">SUNNY SKY</string>
+    <string name="nav_header_subtitle">Language Learning Application</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_layout_chinh">LayoutChinhActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_navigation">Navigation</string>
+
+
+    <string name="translate_success">Từ ngữ dịch thành công sẽ hiển thị ở đây</string>
+    <string name="translate_button">DỊCH</string>
+    <string name="translate_EN_VN">Anh → Việt</string>
+    <string name="translate_VN_EN">Việt → Anh </string>
+</resources>

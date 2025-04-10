@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#F2F2F2">
+
+    <ImageView
+        android:id="@+id/image_vocabulary"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/sport" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_Vocabulary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:text="Từ vựng: Soccer"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/text_Answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:text="Đáp án: Bóng đá"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
